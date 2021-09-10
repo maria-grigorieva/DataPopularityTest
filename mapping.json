@@ -1,0 +1,373 @@
+{
+  "mappings": {
+      "properties": {
+        "@timestamp": {
+          "type": "date"
+        },
+        "attempt_defined_delta": {
+          "type": "long"
+        },
+        "attempt_defined_first": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "attempt_exhausted_delta": {
+          "type": "long"
+        },
+        "attempt_finished": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "attempt_pending_delta": {
+          "type": "long"
+        },
+        "attempt_ready_delta": {
+          "type": "long"
+        },
+        "attempt_ready_first": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "attempt_ready_run_delay": {
+          "type": "long"
+        },
+        "attempt_running_delta": {
+          "type": "long"
+        },
+        "attempt_running_first": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "attempt_scouting_first": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "attempt_start": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "attempt_status": {
+          "type": "keyword"
+        },
+        "attempt_throttled_delta": {
+          "type": "long"
+        },
+        "attempt_total_duration": {
+          "type": "long"
+        },
+        "campaign": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "containername": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "dataset_status": {
+          "type": "keyword"
+        },
+        "datasetname": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_access_cnt": {
+          "type": "long"
+        },
+        "ds_ami_tags": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_bytes": {
+          "type": "long"
+        },
+        "ds_closed_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "ds_created_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "ds_deleted_at": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "ds_data_type": {
+          "type": "keyword"
+        },
+        "ds_dataset_number": {
+          "type": "long"
+        },
+        "ds_did_type": {
+          "type": "keyword"
+        },
+        "ds_name": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_nfiles": {
+          "type": "short"
+        },
+        "ds_nfilesfailed": {
+          "type": "short"
+        },
+        "ds_nfilesfininshed": {
+          "type": "short"
+        },
+        "ds_physics_short": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_prod_step": {
+          "type": "keyword"
+        },
+        "ds_project": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_replicas_ddm": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_replicas_number": {
+          "type": "byte"
+        },
+        "ds_replicas_sites": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_replicas_clouds": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_replicas_info": {
+          "type": "nested"
+        },
+        "ds_run_number": {
+          "type": "long"
+        },
+        "ds_scope": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_stream_name": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        },
+        "ds_type": {
+          "type": "keyword"
+        },
+        "gshare": {
+          "type": "keyword"
+        },
+        "institute_country": {
+          "type": "keyword"
+        },
+        "institute_location": {
+          "type": "geo_point"
+        },
+        "institute_name": {
+          "type": "text",
+           "fields": {
+             "keyword": {
+               "type": "keyword",
+               "ignore_above": 256
+             }
+           }
+        },
+        "jeditaskid": {
+          "type": "long"
+        },
+        "jobs_cpuconsumptiontime": {
+          "type": "long"
+        },
+        "jobs_creationtime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "jobs_endtime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "jobs_starttime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "jobs_total_duration": {
+          "type": "long"
+        },
+        "jobs_inputfilebytes": {
+          "type": "long"
+        },
+        "jobs_ninputdatafiles": {
+          "type": "long"
+        },
+        "jobs_noutputdatafiles": {
+          "type": "long"
+        },
+        "jobs_outputfilebytes": {
+          "type": "long"
+        },
+        "jobs_total_walltime": {
+          "type": "long"
+        },
+        "jobstatus": {
+          "type": "keyword"
+        },
+        "number_of_jobs": {
+          "type": "long"
+        },
+        "queue": {
+          "type": "keyword"
+        },
+        "queue_corecount": {
+          "type": "long"
+        },
+        "queue_corepower": {
+          "type": "double"
+        },
+        "queue_maxinputsize": {
+          "type": "long"
+        },
+        "queue_maxrss": {
+          "type": "long"
+        },
+        "queue_maxswap": {
+          "type": "long"
+        },
+        "queue_maxtime": {
+          "type": "long"
+        },
+        "queue_maxwdir": {
+          "type": "long"
+        },
+        "queue_nodes": {
+          "type": "short"
+        },
+        "queue_status": {
+          "type": "keyword"
+        },
+        "region": {
+          "type": "keyword"
+        },
+        "resource_type": {
+          "type": "keyword"
+        },
+        "site_cloud": {
+          "type": "keyword"
+        },
+        "site_corepower": {
+          "type": "double"
+        },
+        "site_country": {
+          "type": "keyword"
+        },
+        "site_grid_flavour": {
+          "type": "keyword"
+        },
+        "site_location": {
+          "type": "geo_point"
+        },
+        "site_name": {
+          "type": "keyword"
+        },
+        "site_state": {
+          "type": "keyword"
+        },
+        "task_attemptnr": {
+          "type": "short"
+        },
+        "task_creationdate": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "task_end_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "task_modificationtime": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "task_start_time": {
+          "type": "date",
+          "format": "yyyy-MM-dd HH:mm:ss"
+        },
+        "task_status": {
+          "type": "keyword"
+        },
+        "tier_level": {
+          "type": "byte"
+        },
+        "username": {
+          "type": "text",
+           "fields": {
+              "keyword": {
+                  "type": "keyword",
+                  "ignore_above": 256
+              }
+           }
+        }
+      }
+    }
+  }
